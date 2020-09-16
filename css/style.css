@@ -57,7 +57,7 @@ main {
 font-family: 'Hack Regular';
 font-style: normal;
 font-weight: normal;
-src: local('Hack Regular'), url('Hack-Regular.woff') format('woff');
+src: local('Hack Regular'), url('./fonts/Hack-Regular.woff') format('woff');
 }
 
 
