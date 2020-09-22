@@ -1,3 +1,6 @@
+
+@import url(https://fonts.google.com/specimen/Ubuntu?selection.family=Ubuntu:wght@300);
+
 pre { border: 0; display: block; padding: 0px; }
 pre { background-color: #212121; color: #00ff00; border: 0px; border-radius: 5px; box-shadow: 0 0 10px 2px inset rgba(0,0,0,0.6); padding: 15px; overflow-x: hidden; font-family: Hack; white-space: pre-wrap; word-wrap: break-word; }
 
@@ -30,19 +33,13 @@ body {
 				min-height: 100vh;
 				flex-direction: column;
 				background-color: #121212;
-				font-family: 'Hack', sans-serif;
+				font-family: 'Ubuntu', sans-serif;
 				}
 				
 main {
 				flex: 1 0 auto;
 				}
 
-@font-face {
-font-family: 'Hack-Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Hack-Regular'), url('./Hack-Regular.woff') format('woff');
-}
 
 .img {
 				object-fit: cover;
