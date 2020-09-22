@@ -1,19 +1,4 @@
 
-.preloader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  background: rgb(23, 22, 22);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  transition: opacity 0.3s linear;
-}
-
-
 pre { border: 0; display: block; padding: 0px; }
 pre { background-color: #212121; color: #00ff00; border: 0px; border-radius: 5px; box-shadow: 0 0 10px 2px inset rgba(0,0,0,0.6); padding: 15px; overflow-x: hidden; font-family: Hack; white-space: pre-wrap; word-wrap: break-word; }
 
