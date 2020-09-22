@@ -1,12 +1,12 @@
 
-@import url(https://fonts.google.com/specimen/Ubuntu?selection.family=Ubuntu:wght@300);
+@import url(https://fonts.google.com/specimen/Courier+Prime?category=Monospace);
 
 body {
 				display: flex;
 				min-height: 100vh;
 				flex-direction: column;
 				background-color: #121212;
-				font-family: Ubuntu;
+				font-family: Courier;
   
 }
 
